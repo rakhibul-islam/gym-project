@@ -541,9 +541,7 @@ hr{
     text-shadow: 2px 2px 2px var(--btn-color),
     -2px -2px 2px black
   }
-  .nav_items li a:hover {
-    padding: 1rem 3rem;
-  }
+ 
   /* hero */
   .hero {
     flex-direction: column;
