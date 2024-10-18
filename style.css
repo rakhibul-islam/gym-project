@@ -19,6 +19,8 @@
 }
 body {
   font-family: "Roboto", sans-serif;
+  background-color: black;
+  color: var(--primary-text-color);
 }
 img {
   width: 100%;
@@ -57,12 +59,11 @@ img {
 /* utility classes ends here */
 /* navbar section starts here */
 .header {
-  background-color: black;
-  height: 90vh;
+  height: 100vh;
   width: 100%;
 }
 nav {
-  background-color: black;
+ 
   width: 100%;
   position: sticky;
   left: 0;
@@ -196,10 +197,8 @@ left: -4.5rem;
 
 /* habit section starts here */
 .habits{
-  background-color: black;
+
   color: var(--primary-text-color);
-
-
 }
 .habit_text{
   width: 30%;
@@ -217,7 +216,7 @@ text-align: center;
 .habit_gallery{
   width: 80%;
   margin:  auto;
-  padding: 2rem;
+  padding:2rem 5rem;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   justify-content: space-around;
@@ -235,17 +234,47 @@ text-align: center;
 
 }
 .gallery_box h5{
-  font-size: 1rem;
+  font-size: 1.3rem;
+  padding: 0.8rem 0 0.8rem 0;
 }
 .gallery_box p{
-  font-size: 0.7rem;
+  font-size:0.9rem;
 }
 .gallery_img{
  
   border-radius: 50%;
   border: 1px solid white;
 }
+.habit_hero{
+  width:70%;
+  margin: auto;
+  padding:1rem ;
+  border-radius: 1rem;
+  background-color: rgb(34, 34, 34);
+  position: relative;
+  bottom: 4rem;
+  right: 3rem;
+}
+.habit_hero_text{
+  flex-basis: 40%;
+}
+.habit_hero_text h2{
+  font-size:2rem;
+  padding-bottom:2rem;
+}
+.habit_hero_text p{
+  font-size: 0.8rem;
+  padding-bottom: 2rem;
+}
+.habit_hero_image_container{
+  flex-basis: 50%;
+ 
+}
+.habit_hero_image{
+  border-radius: 1rem;
+}
 /* habit section ends here */
+
 
 /* media query */
 
@@ -286,7 +315,7 @@ text-align: center;
     
   }
   .card_1{
-    right: -2rem;
+    right: -1.3rem;
     top: 3rem;
   }
   .card_2{
@@ -295,9 +324,28 @@ text-align: center;
   }
   
 /* habits */
+.habit_text{
+  padding-top: 1rem;
+  width: 90%;
+}
 .habit_gallery{
   width: 100%;
   grid-template-columns: repeat(1,1fr);
+  
 }
+.habit_hero{
+  width: 90%;
+  flex-direction: column;
+top: 0.8rem;
+left: 0;
+gap: 1rem;
+padding: 1.5rem;
+ 
+}
+
+.habit_btn{
+  width: 100%;
+}
+
 }
 
